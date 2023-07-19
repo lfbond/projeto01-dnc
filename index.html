@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+  <!-- meta tag de responsivo e acentuação -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- meta tag de otimização SEO-->
+  <!-- <meta name="description" content=""> 
+  <meta name="keywords" content="">
+  <meta name="author" content="F1 Technology"> -->
+
+  <!-- tag de font do google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet"> 
+
+ <!-- tags de css -->
+  <link rel="stylesheet" href="src/css/styles.css">
+   
+ <!-- tag de titulo do site -->
+  <title>LandPage - DNC</title>
+  <link rel="shotcut icon" type="image-x/png" href="src/assets/favicon.ico" />
+ </head>
+ <body>
+  <!-- HEADER - MENU SUPERIOR -->
+  <header class="menu-superior">
+   <div class="container">
+    <a href="/index.html">
+     <img id="logo" src="src/assets/logo.svg" alt="Logo">
+    </a>
+    <h1 class="titulo-menuSuperior">
+     Dê os primeiros passos da <br> sua carreira em Tecnologia
+    </h1>
+    <p class="texto-menuSuperior">
+     Inscreva-se no curso gratuito de Introdução à <br> Tecnologia da DNS School e aprenda os principais <br> fundamentos para construir experiências efetivas.
+    </p>
+   </div>
+  </header>
+  <!-- SECTION - MENU INFORMACIONAL -->
+  <section class="menu-informacional">   
+   <div class="container">
+    <p class="texto-informativo">
+     <img class="icone" id="certificado" src="src/assets/icons/icon-certificate.svg" alt="Certificados">
+     Certificados de Conclusão
+    </p>
+    
+    <p class="texto-informativo">
+     <img class="icone" id="aulas" src="src/assets/icons/icon-aulas.svg" alt="Tempo de Aulas">
+     4 horas de conteúdo
+    </p>
+    
+    <p class="texto-informativo">
+     <img class="icone" id="camera" src="src/assets/icons/icon-video.svg" alt="Aulas online Gravadas">
+     Aulas Online Gravadas
+    </p>
+   </div>
+  </section>
+
+  <!-- SECTION VIDEO -->
+  <section id="secaoVideo">
+   <div class="container">
+    <iframe id="video" width="502" height="283" src="https://www.youtube.com/embed/ITxGkd9h4n4" title="DNC - A escola inovadora que forma profissionais de alta perfomance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
+    <div>
+     <h1 id="titulo-video">
+      Aprenda com especialistas e <br> comece seu primeiro projeto
+     </h1>
+     <p class="texto-video">
+      Conheça o processo de desenvolvimento e entenda como utilizar <br> os principais métodos e ferramentas da área para resolver
+      <br> problemas complexos.
+     </p>
+     <p class="texto-video">Conquiste seu certificado e desenvolva um projeto prático para <br> aplicar seus conhecimentos.</p>
+    </div>
+   </div>
+  </section>
+
+  <!-- SECTION DEPOIMENTO -->
+  <section id="depoimentos">
+   <div class="container">
+    <h1 id="titulo-carrocel">Mais de 500 alunos já iniciaram seus estudos.</h1>
+    <div class="box-carrocel">
+      <img id="seta-esquerda" onclick="RolarParaEsquerda()" class="seta" src="./src/assets/icons/seta-esquerda.svg" alt="seta-esquerda">
+
+      <div id="Bruna" class="carrocel-depoimento">
+        <img src="src/assets/depoimentos/bruna.svg" alt="Bruna">
+        <div class="depoimento">
+          <quote>“O curso da DNC School foi o ponto de partida da minha transição de carreira. Hoje já consegui minha primeira vaga na área!”</quote>
+         <p>Bruna, desenvolvedora Front-End</p>
+        </div>
+       </div>
+
+       <div id="Leonardo" class="carrocel-depoimento">
+        <img src="src/assets/depoimentos/leonardo.svg" alt="Leonardo">
+        <div class="depoimento">
+          <quote>“Gostei muito da metodologia e da plataforma da Escola DNC. Os materiais são todos muito bons”</quote>
+         <p>Leonardo, desenvolvedor Back-End</p>
+        </div>
+       </div>
+
+       <div id="Samantha" class="carrocel-depoimento">
+        <img src="src/assets/depoimentos/samantha.svg" alt="Samantha">
+        <div class="depoimento">
+          <quote>“O curso da foi a mudança que eu precisava para alcançar meus objetivos profissionais”</quote>
+         <p>Samantha, desenvolvedora Front-End</p>
+        </div>
+       </div>
+
+       <img id="seta-direita" onclick="RolarParaDireita()" class="seta" src="./src/assets/icons/seta-direita.svg" alt="seta-direita">
+    </div>
+   </div>
+  </section>
+
+  <section id="formulario">
+    <h1 class="titulo-formulario">Comece agora mesmo e dê o próximo passo da sua carreira</h1>
+    <form action="https://api.sheetmonkey.io/form/joicnr7R26QXzkKqMgHaQd" method="POST">
+      <input type="text" name="Name" placeholder="Nome Completo" required>
+      <input type="email" name="Email" placeholder="E-mail" required>
+      <input type="number" name="Phone"  placeholder="Telefone (Whatsapp)">
+      <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+      
+      <button type="submit">Acesse a ementa grátis</button>
+    </form>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="./src/js/script.js"></script>
+ </body>
+</html>
